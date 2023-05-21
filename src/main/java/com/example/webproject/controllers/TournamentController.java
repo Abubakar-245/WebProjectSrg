@@ -18,39 +18,39 @@ public class TournamentController {
         this.tournamentService = tournamentService;
     }
 
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public List<Tournament> getAllTournaments() {
-        return tournamentService.getAllTournaments();
-    }
-
-    @GET
-    @Path("/{id}")
-    @Produces(MediaType.APPLICATION_JSON)
-    public Tournament getTournamentById(@PathParam("id") Long id) {
-        return tournamentService.getTournamentById(id);
-    }
-
-    @POST
-    @Consumes(MediaType.APPLICATION_JSON)
-    @Produces(MediaType.APPLICATION_JSON)
-    public Tournament createTournament(Tournament tournament) {
-        return tournamentService.createTournament(tournament);
-    }
-
-    @PUT
-    @Path("/{id}")
-    @Consumes(MediaType.APPLICATION_JSON)
-    @Produces(MediaType.APPLICATION_JSON)
-    public Tournament updateTournament(@PathParam("id") Long id, Tournament tournament) {
-        return tournamentService.updateTournament(id, tournament);
-    }
-
-    @DELETE
-    @Path("/{id}")
-    public void deleteTournament(@PathParam("id") Long id) {
-        tournamentService.deleteTournament(id);
-    }
+//    @GET
+//    @Produces(MediaType.APPLICATION_JSON)
+//    public List<Tournament> getAllTournaments() {
+//        return tournamentService.getAllTournaments();
+//    }
+//
+//    @GET
+//    @Path("/{id}")
+//    @Produces(MediaType.APPLICATION_JSON)
+//    public Tournament getTournamentById(@PathParam("id") Long id) {
+//        return tournamentService.getTournamentById(id);
+//    }
+//
+//    @POST
+//    @Consumes(MediaType.APPLICATION_JSON)
+//    @Produces(MediaType.APPLICATION_JSON)
+//    public Tournament createTournament(Tournament tournament) {
+//        return tournamentService.createTournament(tournament);
+//    }
+//
+//    @PUT
+//    @Path("/{id}")
+//    @Consumes(MediaType.APPLICATION_JSON)
+//    @Produces(MediaType.APPLICATION_JSON)
+//    public Tournament updateTournament(@PathParam("id") Long id, Tournament tournament) {
+//        return tournamentService.updateTournament(id, tournament);
+//    }
+//
+//    @DELETE
+//    @Path("/{id}")
+//    public void deleteTournament(@PathParam("id") Long id) {
+//        tournamentService.deleteTournament(id);
+//    }
 
     // Other CRUD operations and endpoints
 }

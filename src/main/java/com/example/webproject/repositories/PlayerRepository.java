@@ -1,4 +1,7 @@
 package com.example.webproject.repositories;
 
-public interface PlayerRepository {
+import com.example.webproject.models.Player;
+import org.springframework.data.repository.CrudRepository;
+
+public interface PlayerRepository extends CrudRepository<Player, Long> {
 }
