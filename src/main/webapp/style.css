@@ -374,6 +374,8 @@ nav li a:hover{
     display: flex;
     -webkit-flex-direction:row;
     flex-direction: row;
+    padding: 200px 200px 0px 20px;
+
 }
 .split {
     display:block;
@@ -640,10 +642,11 @@ nav li a:hover{
 .details {
     position: relative;
     width: 100%;
-    padding: 20px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
+    padding: 200px 200px 0px 20px;
+
 
     /* margin-top: 10px; */
 }
@@ -721,13 +724,15 @@ nav li a:hover{
 
 .containerrr h3 {
     text-align: center;
-    font-weight: 600;
+    font-weight: 900;
     color: var(--white);
 }
 
 .containerrr {
+    position: absolute;
     max-width: 600px;
     margin: 0 auto;
+    padding: 200px 200px 0px 200px;
 }
 
 textarea {
@@ -752,6 +757,7 @@ button:hover {
 }
 
 #announcement-list {
+    position: center;
     border: 1px solid #ccc;
     padding: 10px;
     background-color: #030747;
@@ -776,6 +782,7 @@ button:hover {
 /* LOG */
 
 #log-list {
+    padding: 200px 200px 0px 20px;
     border: 1px solid #ccc;
     padding: 10px;
     background-color: #030747;
@@ -789,3 +796,32 @@ button:hover {
 #log-list div{
     border-radius: 1.5rem;
 }
+
+/* Manager and Player Registration */
+.form-content h2{
+    color: #fcfcfc;
+}
+.mybutton {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+      }
+
+/*Reset Password */
+.enter h2{
+    color: #f3f3f3;
+}
+.enter .label{
+    color: #f3f3f3;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #14056b;
+      }

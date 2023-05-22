@@ -11,7 +11,7 @@
     <div class="login">
         <h1>LOG IN TO WEBSITE</h1>
         <form method="post" action="">
-            <p><input type="text" name="login" value="" placeholder="Username" required></p>
+            <p><input type="text" name="login" value="" placeholder="name" required></p>
             <p><input type="password" name="password" value="" placeholder="Password" required></p>
             <p class="remember_me">
                 <label>

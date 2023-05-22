@@ -14,6 +14,8 @@
 </head>
 <body>
 
+<jsp:include page="index.jsp"></jsp:include>
+
 <section id="bracket">
     <div class="container">
         <div class="split split-one">

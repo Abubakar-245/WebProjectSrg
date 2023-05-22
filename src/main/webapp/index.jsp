@@ -10,11 +10,11 @@
         <p> tournament </p>
     </div>
     <ul>
-        <li><a href="#">Brackets</a></li>
-        <li><a href="#">Standings</a></li>
-        <li><a href="#">Announcements</a></li>
-        <li><a href="#">Logs</a></li>
-        <li><a href="#">Log In</a></li>
+        <li><a href="brackets.jsp">Brackets</a></li>
+        <li><a href="standings.jsp">Standings</a></li>
+        <li><a href="announcements.jsp">Announcements</a></li>
+        <li><a href="logs.jsp">Logs</a></li>
+        <li><a href="login.jsp">Log In</a></li>
     </ul>
 </nav>
 </body>

@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<jsp:include page="index.jsp"></jsp:include>
+
 <div class="containerrr">
     <h3>Logs</h3>
 

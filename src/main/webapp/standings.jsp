@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<jsp:include page="index.jsp"></jsp:include>
+
 <div class="details">
     <div class="recent">
         <div class="cardHeader">
@@ -34,5 +37,6 @@
             </tr>
         </table>
     </div>
+</div>
 </body>
 </html>

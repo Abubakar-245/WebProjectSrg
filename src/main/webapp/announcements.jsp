@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <jsp:include page="index.jsp"></jsp:include>
+
 <div class="containerrr">
     <h3>Announcement Page</h3>
     <form id="announcement-form">
