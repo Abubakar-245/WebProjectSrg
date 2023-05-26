@@ -1,34 +1,21 @@
 package com.example.webproject.services;
 
-import com.example.webproject.repositories.TournamentRepository;
 
-public class TournamentService {
+import com.example.webproject.models.Tournament;
+import org.springframework.stereotype.Service;
 
-    private final TournamentRepository tournamentRepository;
+import java.util.List;
 
-    public TournamentService(TournamentRepository tournamentRepository) {
-        this.tournamentRepository = tournamentRepository;
-    }
+@Service
+public interface TournamentService {
 
-//    public List<Tournament> getAllTournaments() {
-//        return tournamentRepository.getAllTournaments();
-//    }
-//
-//    public Tournament getTournamentById(Long id) {
-//        return tournamentRepository.getTournamentById(id);
-//    }
-//
-//    public Tournament createTournament(Tournament tournament) {
-//        return tournamentRepository.createTournament(tournament);
-//    }
-//
-//    public Tournament updateTournament(Long id, Tournament tournament) {
-//        return tournamentRepository.updateTournament(id, tournament);
-//    }
-//
-//    public void deleteTournament(Long id) {
-//        tournamentRepository.deleteTournament(id);
-//    }
+    Tournament createTournament(Tournament tournament);
 
-    // Other service methods
+    List<Tournament> getAllTournaments();
+
+    Tournament getTournamentById(Long id);
+
+    Tournament updateTournament(Long id, Tournament tournament);
+
+    void deleteTournament(Long id);
 }

@@ -8,7 +8,7 @@
 <div class="form-content">
     <h2>Player Registration</h2>
     <form>
-        <input type="text" id="PlayerName" name="playererName" placeholder="PlayerName" required><br><br>
+        <input type="text" id="PlayerName" name="playerName" placeholder="PlayerName" required><br><br>
         <input type="text" id="teamName" name="teamName" placeholder="TeamName" required><br><br>
         <select id="teamType" name="teamType">
             <option value="teamA">Team A</option>

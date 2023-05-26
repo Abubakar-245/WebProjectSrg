@@ -2,55 +2,44 @@ package com.example.webproject.controllers;
 
 import com.example.webproject.models.Tournament;
 import com.example.webproject.services.TournamentService;
-import jakarta.inject.Inject;
-import jakarta.ws.rs.*;
-import jakarta.ws.rs.core.MediaType;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Path("/tournaments")
+@RestController
+@RequestMapping("/tournaments")
 public class TournamentController {
 
     private final TournamentService tournamentService;
 
-    @Inject
+    @Autowired
     public TournamentController(TournamentService tournamentService) {
         this.tournamentService = tournamentService;
     }
 
-//    @GET
-//    @Produces(MediaType.APPLICATION_JSON)
-//    public List<Tournament> getAllTournaments() {
-//        return tournamentService.getAllTournaments();
-//    }
-//
-//    @GET
-//    @Path("/{id}")
-//    @Produces(MediaType.APPLICATION_JSON)
-//    public Tournament getTournamentById(@PathParam("id") Long id) {
-//        return tournamentService.getTournamentById(id);
-//    }
-//
-//    @POST
-//    @Consumes(MediaType.APPLICATION_JSON)
-//    @Produces(MediaType.APPLICATION_JSON)
-//    public Tournament createTournament(Tournament tournament) {
-//        return tournamentService.createTournament(tournament);
-//    }
-//
-//    @PUT
-//    @Path("/{id}")
-//    @Consumes(MediaType.APPLICATION_JSON)
-//    @Produces(MediaType.APPLICATION_JSON)
-//    public Tournament updateTournament(@PathParam("id") Long id, Tournament tournament) {
-//        return tournamentService.updateTournament(id, tournament);
-//    }
-//
-//    @DELETE
-//    @Path("/{id}")
-//    public void deleteTournament(@PathParam("id") Long id) {
-//        tournamentService.deleteTournament(id);
-//    }
+    @PostMapping
+    public Tournament createTournament(@RequestBody Tournament tournament) {
+        return tournamentService.createTournament(tournament);
+    }
 
-    // Other CRUD operations and endpoints
+    @GetMapping("/tournaments")
+    public List<Tournament> getAllTournaments() {
+        return tournamentService.getAllTournaments();
+    }
+
+    @GetMapping("/{id}")
+    public Tournament getTournamentById(@PathVariable Long id) {
+        return tournamentService.getTournamentById(id);
+    }
+
+    @PutMapping("/{id}")
+    public Tournament updateTournament(@PathVariable Long id, @RequestBody Tournament tournament) {
+        return tournamentService.updateTournament(id, tournament);
+    }
+
+    @DeleteMapping("/{id}")
+    public void deleteTournament(@PathVariable Long id) {
+        tournamentService.deleteTournament(id);
+    }
 }
